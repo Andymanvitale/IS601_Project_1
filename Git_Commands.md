@@ -5,19 +5,24 @@
 
 #### Group Members: <br> Sowmya Kothapalli, Basil Davies, Andrew Vitale </br>
 
-### Sections 
+## Sections 
 <ol>
  <li>Git Definitions</li>
  <li>How Github Helps Remote Collaboration</li>
  <li>Quick Reference for Git Definitions</li>
+ <li>How to set up Git and work collaboratively with more than one person</li>
  </ol>
  
- ### 1.
-[Git Definitions](/git.md)
+ <br>
+ 
+ ### 1. [Git Definitions](/git.md)
+ 
+ <br>
 
 ### 2. How Github Helps Remote Collaboration
 The use of software such as Git, Docker, automated testing, and continuous integration are key for the success of any company. Especially if they’re a tech company. This is apparent when you look at the productivity of any company that uses these software's. They complement teamwork and efficiency, without it being necessary to be “together”. This is key especially in this current COVID-19 environment. Git and Docker makes it possible for any number of people to work together remotely without distractions. Git is seamless in it’s approach to teamwork and productivity. It allows you to see your teammates work and branch off to create your own work or even edit their work. As shown below, due to Git’s many features and functions, teams are allowed to work together seamlessly. Take for instance this mini project: Three seperate entities were able to work seemlessly on this project due to the advancements in technology such as Github. Teamwork and collaboration fosters knowledge transfer and other Knowledge Management principals, further bolstering the knowledge capital and strength of an organization, making it as competitive as any other organization. In order to stay in contentions with other top companies, software such as Git is essential, especially for tech companies.   
 
+<br>
  
 ### 3. Quick Reference for Git Definitions:
 
@@ -68,4 +73,90 @@ A Git Status is the command used to understand what has happened in the reposito
 * <strong>Master Branch</strong> 
 
 A master branch in Git is the main branch as to which every commit is started from. It is the default branch given when starting a commit. All subsequent branches are made from the master. 
+
+<br>
+
+### 4. How to set up Git and work collaboratively with more than one person:
+
+#### Step 1. Create a Repository
+A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs. It is recommended to include a README, or a file with information about your project. GitHub makes it easy to add one at the same time you create your new repository. It also offers other common options such as a license file.
+
+For example, “IS601_Project_1” is the repository we created for mini project. This repository can be a place to store ideas, resources, or even share and discuss things with others.
+
+<strong>To create a new repository</strong>
+
+In the upper right corner, next to your avatar or identicon, click and then select New repository.
+
+Name the repository “IS601_Project_1”.
+
+Write a short description.
+
+Select Initialize this repository with a README.
+
+Click Create repository.
+
+#### Step 2. Create a Branch
+Branching is the way to work on different versions of a repository at one time.
+
+By default, repository has one branch named “main” which is the definitive branch. We use branches to experiment and make edits before committing them to “main” branch.
+
+When you create a branch off the “main” branch, we are making a copy, or snapshot, of main as it was at that point in time. If someone else made changes to the “main” branch while you were working on your branch, you could pull in those updates.
+
+Below Diagram shows:
+
+The main branch
+
+A new branch called “feature” (because we are doing ‘feature work’ on this branch)
+
+The journey that “feature” takes before it’s merged into main
+ 
+We can save different versions of a file. Something like:
+Basic_Git_Commands.doc
+Basic_Git_Commands edited.doc
+Updated Basic_Git_Commands edited.doc
+
+Branches accomplish similar goals in GitHub repositories.
+In GitHub, developers, writers, and designers can use branches for keeping bug fixes and feature work separate from main (production) branch. When a change is ready, we can merge the branch into main.
+
+<strong>To create a new branch:</strong>
+<ol>
+<li>Go to your new repository “IS601_Project_1”.
+<li>Click the drop down at the top of the file list that says branch: main.
+<li>Type a branch name, “feature” into the new branch text box.
+<li>Select the blue Create branch box or hit “Enter” on your keyboard. 
+ </ol>
+Now we have two branches, main and feature. They look exactly the same, but not for long! Next, we will add our changes to the new branch.
+Step 3. Make and commit changes
+Now, we are on the code view for “feature” branch, which is a copy of main and we can make some edits.
+On GitHub, saved changes are called commits. Each commit has an associated commit message, which is a description explaining why a particular change was made. Commit messages capture the history of your changes, so other contributors can understand what you have done and why.
+Make and commit changes
+Click the README.md file.
+Click the pencil icon in the upper right corner of the file view to edit.
+In the editor, write a bit about your project and about teammates.
+Write a commit message that describes your changes.
+Click Commit changes button.
+These changes will be made to just the README file on your feature branch, so now this branch contains content that is different from main.
+Step 4. Open a Pull Request
+Now that we have changes in a branch off of main, we can open a pull request.
+Pull Requests are the heart of collaboration on GitHub. When you open a pull request, you are proposing your changes and requesting that someone review and pull in your contribution and merge them into their branch. Pull requests show diffs, or differences, of the content from both branches. The changes, additions, and subtractions are shown in green and red.
+As soon as you make a commit, you can open a pull request and start a discussion, even before the code is finished.
+By using GitHub’s @mention system in your pull request message, you can ask for feedback from specific people or teams, whether they are down the hall or 10 time zones away.
+You can even open pull requests in your own repository and merge them yourself. It is a great way to learn the GitHub flow before working on larger projects.
+Open a Pull Request for changes to the README:
+1.	Click the Pull Request tab, then from the Pull Request page, click the green New pull request button.
+2.	select the branch you made, feature, to compare with main (the original).
+3.	Look over your changes in the diffs on the Compare page, make sure they are what you want to submit.
+4.	When you are satisfied that these are the changes you want to submit, click the big green Create Pull Request button.
+5.	Give your pull request a title and write a brief description of your changes.
+6.	When you are done with your message, click Create pull request.
+Step 5. Merge your Pull Request
+In this final step, it is time to bring your changes together – merging your “feature” branch into the “main” branch.
+Click the green Merge pull request button to merge the changes into main.
+Click Confirm merge.
+Go ahead and delete the branch, since its changes have been incorporated, with the Delete branch button in the purple box.
+
+
+
+
+
 
