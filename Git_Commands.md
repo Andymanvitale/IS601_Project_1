@@ -73,7 +73,7 @@ A Remote Add is a function that allows the remote teammates to add something int
 
 * <strong>Status</strong> 
 
-A Git Status is the command used to understand what has happened in the repository. It’s used to know what changes were made, what was added and removed, etc. It checks the state of each command. 
+A Git Status is the command used to understand what has happened in the repository. It’s used to know what changes were made, what was added and removed, etc. It checks the state of each command. It is necessery for making sure every commit has gone through.
 
 * <strong>Master Branch</strong> 
 
