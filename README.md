@@ -2,7 +2,7 @@
 
 #### Group Members: <br> Sowmya Kothapalli, Basil Davies, Andrew Vitale </br>
 
-### Sections 
+### Sections: 
  
 ### 1. [Git Definitions](git.md)
 
