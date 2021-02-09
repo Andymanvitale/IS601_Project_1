@@ -120,39 +120,62 @@ In GitHub, developers, writers, and designers can use branches for keeping bug f
 
 <strong>To create a new branch:</strong>
 <ol>
-<li>Go to your new repository “IS601_Project_1”.
-<li>Click the drop down at the top of the file list that says branch: main.
-<li>Type a branch name, “feature” into the new branch text box.
-<li>Select the blue Create branch box or hit “Enter” on your keyboard. 
+ <li>Go to your new repository “IS601_Project_1”.</li>
+ <li>Click the drop down at the top of the file list that says branch: main.</li>
+ <li>Type a branch name, “feature” into the new branch text box.</li>
+ <li>Select the blue Create branch box or hit “Enter” on your keyboard.</li>
  </ol>
 Now we have two branches, main and feature. They look exactly the same, but not for long! Next, we will add our changes to the new branch.
-Step 3. Make and commit changes
+
+#### Step 3. Make and commit changes
+
 Now, we are on the code view for “feature” branch, which is a copy of main and we can make some edits.
+
 On GitHub, saved changes are called commits. Each commit has an associated commit message, which is a description explaining why a particular change was made. Commit messages capture the history of your changes, so other contributors can understand what you have done and why.
-Make and commit changes
+
+<strong>Make and commit changes</strong>
+
 Click the README.md file.
+
 Click the pencil icon in the upper right corner of the file view to edit.
+
 In the editor, write a bit about your project and about teammates.
+
 Write a commit message that describes your changes.
+
 Click Commit changes button.
+
 These changes will be made to just the README file on your feature branch, so now this branch contains content that is different from main.
-Step 4. Open a Pull Request
+
+#### Step 4. Open a Pull Request
+
 Now that we have changes in a branch off of main, we can open a pull request.
-Pull Requests are the heart of collaboration on GitHub. When you open a pull request, you are proposing your changes and requesting that someone review and pull in your contribution and merge them into their branch. Pull requests show diffs, or differences, of the content from both branches. The changes, additions, and subtractions are shown in green and red.
+
+Pull Requests are the heart of <strong><em>collaboration</em></strong> on GitHub. When you open a pull request, you are proposing your changes and requesting that someone review and pull in your contribution and merge them into their branch. Pull requests show diffs, or differences, of the content from both branches. The changes, additions, and subtractions are shown in green and red.
+
 As soon as you make a commit, you can open a pull request and start a discussion, even before the code is finished.
+
 By using GitHub’s @mention system in your pull request message, you can ask for feedback from specific people or teams, whether they are down the hall or 10 time zones away.
+
 You can even open pull requests in your own repository and merge them yourself. It is a great way to learn the GitHub flow before working on larger projects.
+
 Open a Pull Request for changes to the README:
-1.	Click the Pull Request tab, then from the Pull Request page, click the green New pull request button.
-2.	select the branch you made, feature, to compare with main (the original).
-3.	Look over your changes in the diffs on the Compare page, make sure they are what you want to submit.
-4.	When you are satisfied that these are the changes you want to submit, click the big green Create Pull Request button.
-5.	Give your pull request a title and write a brief description of your changes.
-6.	When you are done with your message, click Create pull request.
-Step 5. Merge your Pull Request
+<ol>
+><li>Click the Pull Request tab, then from the Pull Request page, click the green New pull request button.</li>
+><li>Select the branch you made, feature, to compare with main (the original).</li>
+><li>Look over your changes in the diffs on the Compare page, make sure they are what you want to submit.
+><li>When you are satisfied that these are the changes you want to submit, click the big green Create Pull Request button.
+><li>Give your pull request a title and write a brief description of your changes.
+><li>When you are done with your message, click Create pull request.
+ </ol>
+ 
+#### Step 5. Merge your Pull Request
 In this final step, it is time to bring your changes together – merging your “feature” branch into the “main” branch.
+
 Click the green Merge pull request button to merge the changes into main.
+
 Click Confirm merge.
+
 Go ahead and delete the branch, since its changes have been incorporated, with the Delete branch button in the purple box.
 
 
