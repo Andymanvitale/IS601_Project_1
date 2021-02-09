@@ -10,7 +10,7 @@
 
 ### 3. [Quick Reference for Git Definitions](Git_Commands.md) 
 
-### 4. [How to set up Git and work collaboratively with more than one person](Git_Commands.md)
+### 4. [How to set up Git and work collaboratively with more than one person](git_collaboration.md)
 
 ### 5. [How to create a merge conflict and resolve the merge conflict](Git_Commands.md)
 
