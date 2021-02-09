@@ -46,5 +46,7 @@ Master Branch
 A master branch in Git is the main branch as to which every commit is started from. It is the default branch given when starting a commit. All subsequent branches are made from the master.
 
 
+Remote Add
 
+A Remote Add is a function that allows the remote teammates to add something into the repository. For example, I needed to use Git add in order to add these definitions into the repository. 
 
