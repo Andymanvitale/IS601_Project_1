@@ -29,7 +29,9 @@ Git Checkout is the command used to update the files in the branch and tell Git 
 
 Push 
 
-A Git Push is the command used to upload items from the local repository into a remote repository. Git Push is essential for remote teamwork. It allows for work on separate repositories to match each other. Git push will be used by anyone who would like to edit someone else’s repository, or help them with something. FOr example this file had to be pushed to the local repository in order for it to have been in the README file.
+A Git Push is the command used to upload items from the local repository into a remote repository. Git Push is essential for remote teamwork. It allows for work on separate repositories to match each other. Git push will be used by anyone who would like to edit someone else’s repository, or help them with something. For example this file had to be pushed to the local repository in order for it to have been in the README file.
+
+
 
 
  
@@ -40,7 +42,7 @@ A Git Pull is the opposite command of a Git Push. Instead of uploading from a lo
 
 Status 
 
-A Git Status is the command used to understand what has happened in the repository. It’s used to know what changes were made, what was added and removed, etc. It checks the state of each command. 
+A Git Status is the command used to understand what has happened in the repository. It’s used to know what changes were made, what was added and removed, etc. It checks the state of each command. It is necessery for making sure every commit has gone through.
 
 Master Branch 
 
