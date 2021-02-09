@@ -159,15 +159,13 @@ By using GitHub’s @mention system in your pull request message, you can ask fo
 
 You can even open pull requests in your own repository and merge them yourself. It is a great way to learn the GitHub flow before working on larger projects.
 
-Open a Pull Request for changes to the README:
-<ol>
-><li>Click the Pull Request tab, then from the Pull Request page, click the green New pull request button.</li>
-><li>Select the branch you made, feature, to compare with main (the original).</li>
-><li>Look over your changes in the diffs on the Compare page, make sure they are what you want to submit.
-><li>When you are satisfied that these are the changes you want to submit, click the big green Create Pull Request button.
-><li>Give your pull request a title and write a brief description of your changes.
-><li>When you are done with your message, click Create pull request.
- </ol>
+<strong>Open a Pull Request for changes to the README:</strong>
+> 1. Click the Pull Request tab, then from the Pull Request page, click the green New pull request button.</li>
+> 2. Select the branch you made, feature, to compare with main (the original).</li>
+> 3. Look over your changes in the diffs on the Compare page, make sure they are what you want to submit.
+> 4. When you are satisfied that these are the changes you want to submit, click the big green Create Pull Request button.
+> 5. Give your pull request a title and write a brief description of your changes.
+> 6. When you are done with your message, click Create pull request.
  
 #### Step 5. Merge your Pull Request
 In this final step, it is time to bring your changes together – merging your “feature” branch into the “main” branch.
@@ -177,6 +175,58 @@ Click the green Merge pull request button to merge the changes into main.
 Click Confirm merge.
 
 Go ahead and delete the branch, since its changes have been incorporated, with the Delete branch button in the purple box.
+
+### 5. How to create a merge conflict and resolve the merge conflict:
+You can resolve merge conflicts using the command line and a text editor. Merge conflicts occur when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file. 
+
+#### Competing line change merge conflicts
+
+To resolve a merge conflict caused by competing line changes, you must choose which changes to incorporate from the different branches in a new commit.
+
+For example, if you and another person both edited the file styleguide.md on the same lines in different branches of the same Git repository, you will get a merge conflict error when you try to merge these branches. You must resolve this merge conflict with a new commit before you can merge these branches.
+
+<ol>
+
+ <li>Open Git Bash
+ <li>Navigate into the local Git repository that has the merge conflict.
+> cd REPOSITORY-NAME
+ <li>Generate a list of the files affected by the merge conflict. In this example, the file styleguide.md has a merge conflict.
+
+>git status
+> \# On branch branch-b <br>
+> \# You have unmerged paths. <br>
+> \#   (fix conflicts and run "git commit")<br>
+> \# <br>
+> \# Unmerged paths: <br>
+> \#   (use "git add ..." to mark resolution) <br>
+> \# <br>
+> \# both modified:      styleguide.md <br>
+> \# <br>
+> no changes added to commit (use "git add" and/or "git commit -a")
+
+ <li>Open your favorite text editor, such as Atom, and navigate to the file that has merge conflicts.
+ <li>To see the beginning of the merge conflict in your file, search the file for the conflict marker. When you open the file in your text editor, you will see the changes from the HEAD or base branch after the line <<<<<<< HEAD. Next, you will see =======, which divides your changes from the changes in the other branch, followed by >>>>>>> BRANCH-NAME. In this example, one person wrote "open an issue" in the base or HEAD branch and another person wrote "ask your question in IRC" in the compare branch or branch-a.
+
+> If you have questions, please <br>
+> <<<<<<< HEAD <br>
+> open an issue <br>
+> ======= <br>
+> ask your question in IRC. <br>
+> \>>>>>>> branch-a <br>
+
+ <li>Decide if you want to keep only your branch's changes, keep only the other branch's changes, or make a brand-new change, which may incorporate changes from both branches. Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge. In this example, both changes are incorporated into the final merge:
+ 
+ >If you have questions, please open an issue or ask in our IRC channel if it's more urgent.
+ 
+  <li>	Add or stage your changes.
+  >$git add
+  <li>Commit your changes with a comment.
+   
+   >$ git commit -m "Resolved merge conflict by incorporating both suggestions."
+
+
+
+
 
 
 
