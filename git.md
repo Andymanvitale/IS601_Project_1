@@ -1,4 +1,4 @@
-#Git Definitions:
+#Definitions of Important Git Terms:
 Repository: 
 
 A Repository is the location where files are stored on Github. If a company wanted to collaborate on a project simultaneously, they could all connect to the Github repository and download it onto their own machines. This would allow them to access the main repository on their machine while being able to make changes and push them to the main repository. 
@@ -29,7 +29,8 @@ Git Checkout is the command used to update the files in the branch and tell Git 
 
 Push 
 
-A Git Push is the command used to upload items from the local repository into a remote repository. Git Push is essential for remote teamwork. It allows for work on separate repositories to match each other. Git push will be used by anyone who would like to edit someone else’s repository, or help them with something. 
+A Git Push is the command used to upload items from the local repository into a remote repository. Git Push is essential for remote teamwork. It allows for work on separate repositories to match each other. Git push will be used by anyone who would like to edit someone else’s repository, or help them with something. FOr example this file had to be pushed to the local repository in order for it to have been in the README file.
+
 
  
 
