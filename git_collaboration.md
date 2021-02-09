@@ -27,6 +27,8 @@ When you create a branch off the “main” branch, we are making a copy, or sna
 
 Below Diagram shows:
 
+![Image of Branching](https://github.com/Andymanvitale/IS601_Project_1/blob/main/branching.png?raw=true)
+
 The main branch
 
 A new branch called “feature” (because we are doing ‘feature work’ on this branch)
