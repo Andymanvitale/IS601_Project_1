@@ -223,6 +223,46 @@ For example, if you and another person both edited the file styleguide.md on the
   <li>Commit your changes with a comment.
    
    >$ git commit -m "Resolved merge conflict by incorporating both suggestions."
+   
+</ol>
+   
+You can now merge the branches on the command line or push your changes to your remote repository on GitHub and merge your changes in a pull request.
+
+#### Resolve file merge conflicts
+
+To resolve a merge conflict caused by competing changes to a file, where a person deletes a file in one branch and another person edits the same file, you must choose whether to delete or keep the removed file in a new commit.
+
+For example, if you edited a file, such as README.md, and another person removed the same file in another branch in the same Git repository, you will get a merge conflict error when you try to merge these branches. You must resolve this merge conflict with a new commit before you can merge these branches.
+
+<ol>
+ <li>Open Git Bash
+ <li>Navigate into the local Git repository that has the merge conflict. 
+  >cd REPOSITORY-NAME
+ <li>Generate a list of the files affected by the merge conflict. In this example, the file README.md has a merge conflict.
+  
+  $ git status
+> \> # On branch main
+> # Your branch and 'origin/main' have diverged,
+> # and have 1 and 2 different commits each, respectively.
+> #  (use "git pull" to merge the remote branch into yours)
+> # You have unmerged paths.
+> #  (fix conflicts and run "git commit")
+> #
+> # Unmerged paths:
+> #  (use "git add/rm ..." as appropriate to mark resolution)
+> #
+> #	deleted by us:   README.md
+> #
+> # no changes added to commit (use "git add" and/or "git commit -a")
+
+ <li>Open your favorite text editor, such as Atom, and navigate to the file that has merge conflicts.
+ <li>Decide if you want to keep the removed file. You may want to view the latest changes made to the removed file in your text editor.
+ <li>Commit your changes with a comment.
+</ol>
+
+You can now merge the branches on the command line or push your changes to your remote repository on GitHub and merge your changes in a pull request.
+
+
 
 
 
