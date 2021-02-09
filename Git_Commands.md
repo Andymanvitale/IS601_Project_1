@@ -242,26 +242,85 @@ For example, if you edited a file, such as README.md, and another person removed
   
   $ git status
 > \> # On branch main
-> # Your branch and 'origin/main' have diverged,
-> # and have 1 and 2 different commits each, respectively.
-> #  (use "git pull" to merge the remote branch into yours)
-> # You have unmerged paths.
-> #  (fix conflicts and run "git commit")
-> #
-> # Unmerged paths:
-> #  (use "git add/rm ..." as appropriate to mark resolution)
-> #
-> #	deleted by us:   README.md
-> #
-> # no changes added to commit (use "git add" and/or "git commit -a")
+> \># Your branch and 'origin/main' have diverged,
+> \># and have 1 and 2 different commits each, respectively.
+> \>#  (use "git pull" to merge the remote branch into yours)
+> \># You have unmerged paths.
+> \>#  (fix conflicts and run "git commit")
+> \>#
+> \># Unmerged paths:
+> \>#  (use "git add/rm ..." as appropriate to mark resolution)
+> \>#
+> \>#	deleted by us:   README.md
+> \>#
+> \># no changes added to commit (use "git add" and/or "git commit -a")
 
  <li>Open your favorite text editor, such as Atom, and navigate to the file that has merge conflicts.
  <li>Decide if you want to keep the removed file. You may want to view the latest changes made to the removed file in your text editor.
+  
+ #### To add the removed file back to your repository
+ > $ git add README.md
+ 
+ #### To remove this file from your repository:
+
+> $ git rm README.md
+> \> README.md: needs merge
+> \> rm 'README.md'
+
  <li>Commit your changes with a comment.
+
+> $ git commit -m "Resolved merge conflict by keeping README.md file."
+> \> \[branch-d 6f89e49] Merge branch 'branch-c' into branch-d
+
+
 </ol>
 
 You can now merge the branches on the command line or push your changes to your remote repository on GitHub and merge your changes in a pull request.
 
+### 1. Forking vs Cloning
+
+The difference between cloning and forking a repository on GitHub:
+
+#### Forking
+
+A fork is a copy of a repository that allows you to freely experiment with changes without affecting the original project. A forked repository differs from a clone in that a connection exists between your fork and the original repository itself. In this way, your fork acts as a bridge between the original repository and your personal copy where you can contribute back to the original project using Pull Requests.
+
+Forking a project is as easy as clicking the Fork button in the header of a repository. Once the process is complete, you will be taken right to the forked copy of the project so you can start collaborating.
+
+#### Cloning
+
+When you create a new repository on GitHub, it exists as a remote location where your project is stored. You can clone your repository to create a local copy on your computer so that you can sync between both the local and remote locations of the project.
+
+Unlike forking, you will not be able to pull down changes from the original repository you cloned from, and if the project is owned by someone else you won’t be able to contribute back to it unless you are specifically invited as a collaborator. Cloning is ideal for instances when you need a way to quickly get your own copy of a repository where you may not be contributing to the original project.
+
+To clone a repository, head over to the main page of a project and click the Clone or download button to get the repository’s HTTPS or SSH URL. Then, you can perform the clone using the git clone command in your command line interface of choice.
+
+### 2. Pull Request
+
+Pull requests let you tell others about changes you have pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
+
+After initializing a pull request, you will see a review page that shows a high-level overview of the changes between your branch (the compare branch) and the repository's base branch. You can add a summary of the proposed changes, review the changes made by commits, add labels, milestones, and assignees, and @mention individual contributors or teams. For more information, see "Creating a pull request."
+
+Once you have created a pull request, you can push commits from your topic branch to add them to your existing pull request. These commits will appear in chronological order within your pull request and the changes will be visible in the "Files changed" tab.
+
+Other contributors can review your proposed changes, add review comments, contribute to the pull request discussion, and even add commits to the pull request.
+
+### 3.	Adding a collaborator to a Github Repo:
+
+Only members with owner privileges for an organization or admin privileges for a repository can add outside collaborators to a repository unless an organization owner has restricted the ability to invite collaborators. Adding an outside collaborator to a private repository will use one of your organization's paid licenses.
+
+If your organization requires members and outside collaborators to use two-factor authentication, they must enable two-factor authentication before they can accept your invitation to collaborate on an organization repository.
+
+When you add an outside collaborator to a repository, you will also need to add them to any forks of the repository you would like them to access.
+
+<ol>
+ <li>On GitHub, navigate to the main page of the repository.
+ <li>Under your repository name, click Settings.
+ <li>In the left sidebar, click Manage access.
+ <li>To the right of "Manage access", click Invite teams or people.
+ <li>In the search field, start typing the name of person you want to invite, then click a name in the list of matches.
+ <li>Under "Choose a role", select the permissions to grant to the person, then click Add NAME to REPOSITORY.
+</ol>
 
 
 
