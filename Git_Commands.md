@@ -11,7 +11,12 @@
  <li>How Github Helps Remote Collaboration</li>
  <li>Quick Reference for Git Definitions</li>
  <li>How to set up Git and work collaboratively with more than one person</li>
- </ol>
+ <li> How to create a merge conflict and resolve the merge conflict</li>
+ <li>Forking vs Cloning</li>
+ <li>Pull Request</li>
+ <li>Adding a collaborator to a Github Repo</li>
+ 
+</ol>
  
  <br>
  
@@ -277,7 +282,7 @@ For example, if you edited a file, such as README.md, and another person removed
 
 You can now merge the branches on the command line or push your changes to your remote repository on GitHub and merge your changes in a pull request.
 
-### 1. Forking vs Cloning
+### 6. Forking vs Cloning
 
 The difference between cloning and forking a repository on GitHub:
 
@@ -295,7 +300,7 @@ Unlike forking, you will not be able to pull down changes from the original repo
 
 To clone a repository, head over to the main page of a project and click the Clone or download button to get the repository’s HTTPS or SSH URL. Then, you can perform the clone using the git clone command in your command line interface of choice.
 
-### 2. Pull Request
+### 7. Pull Request
 
 Pull requests let you tell others about changes you have pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
 
@@ -305,7 +310,7 @@ Once you have created a pull request, you can push commits from your topic branc
 
 Other contributors can review your proposed changes, add review comments, contribute to the pull request discussion, and even add commits to the pull request.
 
-### 3.	Adding a collaborator to a Github Repo:
+### 8.	Adding a collaborator to a Github Repo:
 
 Only members with owner privileges for an organization or admin privileges for a repository can add outside collaborators to a repository unless an organization owner has restricted the ability to invite collaborators. Adding an outside collaborator to a private repository will use one of your organization's paid licenses.
 
